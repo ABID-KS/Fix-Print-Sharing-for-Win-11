@@ -1,0 +1,53 @@
+; Dokumen/fungsi bagian pada tweak regedit
+
+; Mengizinkan pengguna non-administrator untuk menginstal driver printer dari server jaringan (Point and Print)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint]
+"RestrictDriverInstallationToAdministrators"=dword:00000000
+
+; Menonaktifkan enkripsi autentikasi RPC
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Print]
+"RpcAuthnLevelPrivacyEnabled"=dword:00000000
+
+; Pengaturan untuk mengontrol jalur komunikasi RPC untuk layanan printer 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\RPC]
+"RpcUseNamedPipeProtocol"=dword:00000001	
+"RpcTcpPort"=dword:0000c350                	
+"RpcProtocols"=dword:00000007              	
+"ForceKerberosForRpc"=dword:00000001       	
+
+; Pengelolaan instalasi dan penyalinan file printer melalui Group Policy
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
+"CopyFilesPolicy"=dword:00000001           	
+
+; Pengaturan passwordless utk menonaktifkan perlindungan berbasis PIN/biometric
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device]
+"PasswordLessBuildVersion"=dword:00000000 	
+
+; Pengaturan untuk mengizinkan akun tanpa password utk remote
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"LimitBlankPasswordUse"=dword:00000000 		
+
+; Memberi hak akses pada aku/user anonymous
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"everyoneincludeanonymous"=dword:00000001 	
+
+; mengizinkan koneksi SMB(Server Message Block) tanpa autentikasi (null session)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"restrictnullsessaccess"=dword:00000000
+
+; Mengatur SMB(Server Message Block) signing 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"EnableSecuritySignature"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"RequireSecuritySignature"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"EnableSecuritySignature"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"RequireSecuritySignature"=dword:00000000
+
+; Mengizinkan koneksi SMB tanpa autentikasi (guest access) ke server/share jaringan.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LanmanWorkstation\Parameters]
+"AllowInsecureGuestAuth"=dword:00000001
