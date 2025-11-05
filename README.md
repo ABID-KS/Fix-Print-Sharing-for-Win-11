@@ -13,7 +13,7 @@ File/tools ini berfungsi untuk mengatasi masalah terkait dengan printer sharing 
 
 ## Cara Pakai
 - Jalankan file "Nganu.bat" dengan Run as Administrator
-- Atau bisa menggunakan cara manual pada "Dokumen Win 11 print sharimg.txt" 
+- Atau bisa menggunakan cara manual pada "Dokumen Win 11 print sharimg.txt" (Jika masih error silahkan gunakan yg file .bat) 
 ## Fitur
 - Setting RPC pada Group Policy dan Regedit
 - Setting Point and Print
