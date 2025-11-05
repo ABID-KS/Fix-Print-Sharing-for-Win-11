@@ -25,3 +25,8 @@ File/tools ini berfungsi untuk mengatasi masalah terkait dengan printer sharing 
 
 ## Lain-lain
 Untuk mengetahui fungsi lebih lanjut, anda bisa membaca dokumentasi pada file yg bernama "Dokumen Win 11 print sharimg.txt"
+
+## Credit
+Special thanks to :
+- iiS4w for file .bat
+- enyongapangerti for Regedit tweak
