@@ -11,6 +11,9 @@ File/tools ini berfungsi untuk mengatasi masalah terkait dengan printer sharing 
 - <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/regini">regini.exe</a> memodifikasi registry dari baris perintah, dan menerapkan perubahan yang telah diatur sebelumnya dalam file text.
 - Nganu.bat sebuah script dan tweak untuk fix print sharing win 11
 
+## Cara Pakai
+- Jalankan file "Nganu.bat" dengan Run as Administrator
+- Atau bisa menggunakan cara manual pada "Dokumen Win 11 print sharimg.txt" 
 ## Fitur
 - Setting RPC pada Group Policy dan Regedit
 - Setting Point and Print
