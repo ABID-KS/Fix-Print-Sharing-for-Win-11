@@ -10,6 +10,7 @@ File/tools ini berfungsi untuk mengatasi masalah terkait dengan printer sharing 
 - <a href="https://www.microsoft.com/en-us/download/details.aspx?id=55319">LGPO.exe</a> merupakan utilitas baris perintah baru untuk mengotomatiskan pada local group policy
 - <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/regini">regini.exe</a> memodifikasi registry dari baris perintah, dan menerapkan perubahan yang telah diatur sebelumnya dalam file text.
 - Nganu.bat sebuah script dan tweak untuk fix print sharing win 11
+
 ## (Update V2)
 - (TAMBAHAN) folder addon berisi file DelReg.bat untuk menghapus tweak regedit fix print sharing win 11 yang telah terinstall
 
